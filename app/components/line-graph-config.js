@@ -1,5 +1,6 @@
-import GraphConfig from 'appkit/models/graph-config';
-var LineGraphConfig = Ember.Object.extend(GraphConfig, {
+import GraphConfig from 'appkit/components/graph-config';
+Ember.Logger.log(GraphConfig);
+export default GraphConfig.extend({
   yAxis: {
     title: {
       text: null
@@ -16,4 +17,4 @@ var LineGraphConfig = Ember.Object.extend(GraphConfig, {
     }
   }
 });
-export default LineGraphConfig;
+//export default LineGraphConfig;
